@@ -7,4 +7,4 @@
 6) SELECT * FROM `degrees` WHERE `level` = 'magistrale';
 7) SELECT COUNT(*) FROM `departments`;
 8) SELECT COUNT(*) FROM `teachers` WHERE `phone` IS NULL;
-9 - BONUS) SELECT `name`, `description`, `period` FROM `courses` WHERE `website` IS NOT NULL AND `cfu` >= 9 AND `cfu` <= 12 AND `year` = 1 ORDER BY `name` DESC;
+9 - BONUS) SELECT `name`, `description`, `period` FROM `courses` WHERE `website` IS NOT NULL AND `cfu` >= 9 AND `cfu` <= 12 AND `year` = 1 ORDER BY `cfu` DESC;
