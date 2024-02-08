@@ -5,4 +5,6 @@ GROUP BY
 4) SELECT COUNT(*), `department_id` FROM `degrees` GROUP BY `department_id`;
 
 JOIN
-1) SELECT DISTINCT `students`.*, `degrees`.`name`, `degrees`.`address` FROM `degrees` JOIN `students` ON `degrees`.`id` = `students`.`degree_id` WHERE `degrees`.`name` = 'Corso di Laurea in Economia'; 
+1) SELECT DISTINCT `students`.*, `degrees`.`name`, `degrees`.`address` FROM `degrees` JOIN `students` ON `degrees`.`id` = `students`.`degree_id` WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
+2) SELECT `degrees`.`name` AS `degree_name`, `departments`.`name` AS `dept_name`, `departments`.`head_of_department`, `degrees`.`level` FROM `degrees` JOIN `departments` ON `degrees`.`department_id` = `departments`.`id` WHERE `departments`.`name` = "Dipartimento di Neuroscienze" AND `degrees`.`level` = "magistrale";
+3)
