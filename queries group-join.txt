@@ -3,3 +3,6 @@ GROUP BY
 2) SELECT COUNT(*), `office_address` FROM `teachers` GROUP BY `office_address` ORDER BY `COUNT(*)` ASC
 3) SELECT COUNT(*), `exam_id`, ROUND(AVG(vote)) FROM `exam_student` GROUP BY `exam_id`;
 4) SELECT COUNT(*), `department_id` FROM `degrees` GROUP BY `department_id`;
+
+JOIN
+1) SELECT DISTINCT `students`.*, `degrees`.`name`, `degrees`.`address` FROM `degrees` JOIN `students` ON `degrees`.`id` = `students`.`degree_id` WHERE `degrees`.`name` = 'Corso di Laurea in Economia'; 
